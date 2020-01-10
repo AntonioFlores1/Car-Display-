@@ -37,7 +37,7 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
         collectionViewCell.display(info:carInfoForCell)
 //        collectionViewCell.sizeThatFits(CGSize(width: 600, height: 200))
         
-        collectionViewCell.backgroundColor = .red
+//        collectionViewCell.backgroundColor = .red
         
         return collectionViewCell
     }
