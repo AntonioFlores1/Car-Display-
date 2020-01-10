@@ -1,0 +1,375 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A945B18223C8416300169518 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A945B18123C8416300169518 /* AppDelegate.swift */; };
+		A945B18423C8416300169518 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A945B18323C8416300169518 /* SceneDelegate.swift */; };
+		A945B18623C8416300169518 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A945B18523C8416300169518 /* ViewController.swift */; };
+		A945B18923C8416300169518 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A945B18723C8416300169518 /* Main.storyboard */; };
+		A945B18B23C8416500169518 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A945B18A23C8416500169518 /* Assets.xcassets */; };
+		A945B18E23C8416500169518 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A945B18C23C8416500169518 /* LaunchScreen.storyboard */; };
+		A945B19623C8432800169518 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = A945B19523C8432800169518 /* View.xib */; };
+		A945B19C23C8447A00169518 /* CarNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A945B19B23C8447A00169518 /* CarNode.swift */; };
+		A945B1A323C84B0D00169518 /* R8_Low_Poly_Turbosquid2.scn in Resources */ = {isa = PBXBuildFile; fileRef = A945B1A223C84B0D00169518 /* R8_Low_Poly_Turbosquid2.scn */; };
+		A945B1A723C84D3F00169518 /* CarListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A945B1A623C84D3F00169518 /* CarListing.swift */; };
+		A945B1AD23C851A100169518 /* PeugeotOnyxConcept.obj in Resources */ = {isa = PBXBuildFile; fileRef = A945B1AC23C851A100169518 /* PeugeotOnyxConcept.obj */; };
+		A945B1AF23C851DB00169518 /* PeugeotOnyxConcept.scn in Resources */ = {isa = PBXBuildFile; fileRef = A945B1AE23C851DB00169518 /* PeugeotOnyxConcept.scn */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A945B17E23C8416300169518 /* Car 3D Display.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Car 3D Display.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A945B18123C8416300169518 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A945B18323C8416300169518 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A945B18523C8416300169518 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A945B18823C8416300169518 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A945B18A23C8416500169518 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A945B18D23C8416500169518 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A945B18F23C8416500169518 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A945B19523C8432800169518 /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		A945B19B23C8447A00169518 /* CarNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarNode.swift; sourceTree = "<group>"; };
+		A945B1A223C84B0D00169518 /* R8_Low_Poly_Turbosquid2.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = R8_Low_Poly_Turbosquid2.scn; sourceTree = "<group>"; };
+		A945B1A623C84D3F00169518 /* CarListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListing.swift; sourceTree = "<group>"; };
+		A945B1AC23C851A100169518 /* PeugeotOnyxConcept.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PeugeotOnyxConcept.obj; sourceTree = "<group>"; };
+		A945B1AE23C851DB00169518 /* PeugeotOnyxConcept.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = PeugeotOnyxConcept.scn; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A945B17B23C8416300169518 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A945B17523C8416200169518 = {
+			isa = PBXGroup;
+			children = (
+				A945B19B23C8447A00169518 /* CarNode.swift */,
+				A945B18023C8416300169518 /* Car 3D Display */,
+				A945B17F23C8416300169518 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A945B17F23C8416300169518 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A945B17E23C8416300169518 /* Car 3D Display.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A945B18023C8416300169518 /* Car 3D Display */ = {
+			isa = PBXGroup;
+			children = (
+				A945B19D23C8477D00169518 /* Car Model */,
+				A945B18123C8416300169518 /* AppDelegate.swift */,
+				A945B18323C8416300169518 /* SceneDelegate.swift */,
+				A945B18523C8416300169518 /* ViewController.swift */,
+				A945B1A623C84D3F00169518 /* CarListing.swift */,
+				A945B18723C8416300169518 /* Main.storyboard */,
+				A945B19523C8432800169518 /* View.xib */,
+				A945B18A23C8416500169518 /* Assets.xcassets */,
+				A945B18C23C8416500169518 /* LaunchScreen.storyboard */,
+				A945B18F23C8416500169518 /* Info.plist */,
+			);
+			path = "Car 3D Display";
+			sourceTree = "<group>";
+		};
+		A945B19D23C8477D00169518 /* Car Model */ = {
+			isa = PBXGroup;
+			children = (
+				A945B1AC23C851A100169518 /* PeugeotOnyxConcept.obj */,
+				A945B1AE23C851DB00169518 /* PeugeotOnyxConcept.scn */,
+				A945B1A223C84B0D00169518 /* R8_Low_Poly_Turbosquid2.scn */,
+			);
+			name = "Car Model";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A945B17D23C8416300169518 /* Car 3D Display */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A945B19223C8416500169518 /* Build configuration list for PBXNativeTarget "Car 3D Display" */;
+			buildPhases = (
+				A945B17A23C8416300169518 /* Sources */,
+				A945B17B23C8416300169518 /* Frameworks */,
+				A945B17C23C8416300169518 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Car 3D Display";
+			productName = "Car 3D Display";
+			productReference = A945B17E23C8416300169518 /* Car 3D Display.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A945B17623C8416200169518 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "antonio ";
+				TargetAttributes = {
+					A945B17D23C8416300169518 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = A945B17923C8416200169518 /* Build configuration list for PBXProject "Car 3D Display" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A945B17523C8416200169518;
+			productRefGroup = A945B17F23C8416300169518 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A945B17D23C8416300169518 /* Car 3D Display */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A945B17C23C8416300169518 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A945B19623C8432800169518 /* View.xib in Resources */,
+				A945B18E23C8416500169518 /* LaunchScreen.storyboard in Resources */,
+				A945B1A323C84B0D00169518 /* R8_Low_Poly_Turbosquid2.scn in Resources */,
+				A945B18B23C8416500169518 /* Assets.xcassets in Resources */,
+				A945B1AD23C851A100169518 /* PeugeotOnyxConcept.obj in Resources */,
+				A945B1AF23C851DB00169518 /* PeugeotOnyxConcept.scn in Resources */,
+				A945B18923C8416300169518 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A945B17A23C8416300169518 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A945B19C23C8447A00169518 /* CarNode.swift in Sources */,
+				A945B18623C8416300169518 /* ViewController.swift in Sources */,
+				A945B1A723C84D3F00169518 /* CarListing.swift in Sources */,
+				A945B18223C8416300169518 /* AppDelegate.swift in Sources */,
+				A945B18423C8416300169518 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A945B18723C8416300169518 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A945B18823C8416300169518 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A945B18C23C8416500169518 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A945B18D23C8416500169518 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A945B19023C8416500169518 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A945B19123C8416500169518 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A945B19323C8416500169518 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PN99Z24U45;
+				INFOPLIST_FILE = "Car 3D Display/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.Car-3D-Display";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A945B19423C8416500169518 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PN99Z24U45;
+				INFOPLIST_FILE = "Car 3D Display/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.Car-3D-Display";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A945B17923C8416200169518 /* Build configuration list for PBXProject "Car 3D Display" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A945B19023C8416500169518 /* Debug */,
+				A945B19123C8416500169518 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A945B19223C8416500169518 /* Build configuration list for PBXNativeTarget "Car 3D Display" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A945B19323C8416500169518 /* Debug */,
+				A945B19423C8416500169518 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A945B17623C8416200169518 /* Project object */;
+}
