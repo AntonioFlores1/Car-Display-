@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,16 +16,65 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yb4-uP-MPp">
-                                <rect key="frame" x="0.0" y="29" width="414" height="332"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </sceneKitView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="tM6-U8-gxe">
+                                <rect key="frame" x="0.0" y="314.5" width="414" height="277"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vmD-Wz-1MW">
+                                    <size key="itemSize" width="165" height="163"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="carCell" id="esT-ZE-SNV" customClass="CarCollectionViewCell" customModule="Car_3D_Display" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="57" width="165" height="163"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="136-Xm-6du">
+                                            <rect key="frame" x="0.0" y="0.0" width="165" height="163"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YBU-vs-eMl">
+                                                    <rect key="frame" x="5" y="27.5" width="155" height="124"/>
+                                                </sceneKitView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbf-tj-M0A">
+                                                    <rect key="frame" x="7.5" y="0.5" width="150" height="20.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="150" id="1Q5-J3-oAS"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="YBU-vs-eMl" firstAttribute="centerX" secondItem="136-Xm-6du" secondAttribute="centerX" id="5Yp-70-Bk9"/>
+                                                <constraint firstItem="YBU-vs-eMl" firstAttribute="width" secondItem="136-Xm-6du" secondAttribute="width" multiplier="0.939394" id="7ea-tu-Upv"/>
+                                                <constraint firstItem="YBU-vs-eMl" firstAttribute="height" secondItem="136-Xm-6du" secondAttribute="height" multiplier="0.760736" id="HZT-cc-p5i"/>
+                                                <constraint firstItem="YBU-vs-eMl" firstAttribute="top" secondItem="fbf-tj-M0A" secondAttribute="bottom" constant="6.5" id="MoA-yR-fvw"/>
+                                                <constraint firstItem="fbf-tj-M0A" firstAttribute="centerX" secondItem="YBU-vs-eMl" secondAttribute="centerX" id="blJ-14-7nX"/>
+                                                <constraint firstItem="YBU-vs-eMl" firstAttribute="centerY" secondItem="136-Xm-6du" secondAttribute="centerY" multiplier="1.1" id="uY3-FP-cIp"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="165" height="163"/>
+                                        <connections>
+                                            <outlet property="carNameLabel" destination="fbf-tj-M0A" id="c8C-Db-Zrd"/>
+                                            <outlet property="sceneView" destination="YBU-vs-eMl" id="Uaz-5q-Oaj"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="tM6-U8-gxe" firstAttribute="centerY" secondItem="kJH-am-piy" secondAttribute="centerY" id="WTS-uM-lYs"/>
+                            <constraint firstItem="tM6-U8-gxe" firstAttribute="width" secondItem="XA4-X5-Moj" secondAttribute="width" id="XUP-ne-bWJ"/>
+                            <constraint firstItem="tM6-U8-gxe" firstAttribute="centerX" secondItem="kJH-am-piy" secondAttribute="centerX" id="g7z-jT-q8W"/>
+                            <constraint firstItem="tM6-U8-gxe" firstAttribute="height" secondItem="XA4-X5-Moj" secondAttribute="height" multiplier="0.309152" id="ifP-zE-9Dz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="kJH-am-piy"/>
                     </view>
                     <connections>
-                        <outlet property="sceneView" destination="yb4-uP-MPp" id="M0M-QW-5or"/>
+                        <outlet property="CollectionView" destination="tM6-U8-gxe" id="7P7-U0-OVj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

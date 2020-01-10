@@ -22,7 +22,7 @@ class CarInfo {
         self.carSound = carSound
     }
     
-    var carInfoArray = [CarInfo(name: "R8", carModel: "R8_Low_Poly_Turbosquid2.scn", price: "$290,800", carSound: "room- room"),CarInfo(name: "Peugeot Onyx Concept", carModel: "PeugeotOnyxConcept.scn", price: "1 Mill", carSound: "Beep Beep")]
+   static var carInfoArray = [CarInfo(name: "chevrolet corvette stingray", carModel: "chevrolet+corvette+stingray+c7.scn", price: "$600,502", carSound: "choo choo"),CarInfo(name: "R8", carModel: "R8_Low_Poly_Turbosquid2.scn", price: "$290,800", carSound: "room- room"),CarInfo(name: "Peugeot Onyx Concept", carModel: "PeugeotOnyxConcept.scn", price: "1 Mill", carSound: "Beep Beep"),CarInfo(name: "R8", carModel: "R8_Low_Poly_Turbosquid2.scn", price: "$290,800", carSound: "room- room")]
 }
 
 

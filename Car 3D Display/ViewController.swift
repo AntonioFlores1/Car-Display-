@@ -9,46 +9,51 @@
 import UIKit
 import SceneKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
+    
 
-    @IBOutlet weak var sceneView: SCNView!
+    @IBOutlet weak var CollectionView: UICollectionView!
+    
+    var carsArray = CarInfo.carInfoArray
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let scene = SCNScene(named: "PeugeotOnyxConcept.scn")
         
-        let cameraNode = SCNNode()
-        cameraNode.camera = SCNCamera()
-        
-         cameraNode.position = SCNVector3(x: 0, y: 10, z: 35)
-//        cameraNode.position = SCNVector3(x: 0, y: 5, z: 7) for eugeotOnyxConcept
-        
-        scene?.rootNode.addChildNode(cameraNode)
-        
-        
-        let lightNode = SCNNode()
-               lightNode.light = SCNLight()
-               lightNode.light?.type = .omni
-               lightNode.position = SCNVector3(x: 0, y: 10, z: 10)
-               scene?.rootNode.addChildNode(lightNode)
-               
-               // 6: Creating and adding ambien light to scene
-               let ambientLightNode = SCNNode()
-               ambientLightNode.light = SCNLight()
-               ambientLightNode.light?.type = .ambient
-               ambientLightNode.light?.color = UIColor.darkGray
-               scene?.rootNode.addChildNode(ambientLightNode)
-        
-        sceneView.cameraControlConfiguration.allowsTranslation = false
-       
-        sceneView.scene = scene
-        
-        sceneView.showsStatistics = true
-        sceneView.backgroundColor = .white
-        sceneView.allowsCameraControl = true
+        CollectionView.dataSource = self
+        CollectionView.delegate = self
     }
 
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return carsArray.count
+    }
     
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let collectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "carCell", for: indexPath) as? CarCollectionViewCell else {
+            return UICollectionViewCell()
+        }
+        
+        let carInfoForCell = carsArray[indexPath.row]
+        
+        collectionViewCell.display(info:carInfoForCell)
+//        collectionViewCell.sizeThatFits(CGSize(width: 600, height: 200))
+        
+        collectionViewCell.backgroundColor = .red
+        
+        return collectionViewCell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    
+
+            return CGSize(width: 250, height: 250)
+//        return CGSize(width: 500, height: 200)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                           layout collectionViewLayout: UICollectionViewLayout,
+                           minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+           return 20
+       }
 
 }
 
